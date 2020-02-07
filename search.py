@@ -9,7 +9,7 @@ import easygui
 def main():
     query = sys.argv[1]
     print(query)
-    key = 'AIzaSyAErHc2pCqwXSGMtUpyrEv5UcPuNzbDYZU'
+    key = 'api key'
 
     doc = requests.get(f"https://www.googleapis.com/youtube/v3/search?q={query}&key={key}&part=snippet&type=video")
     res = json.loads(doc.text)
